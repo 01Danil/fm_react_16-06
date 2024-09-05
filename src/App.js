@@ -6,13 +6,12 @@ import Chao from "./components/Chao";
 function App() {
   const user = {
     fullName: "Elon Musk",
-    avatar: "http://localhost:3000/favicon.ico",
   };
   return (
     <>
-      <Chao name={user.fullName} photo={user.avatar} />
+      <Chao name={user.fullName} isHi />
       <Chao name="Elen Musk" />
-      <Chao name="Rob Bob" />
+      <Chao name="Rob Bob" isHi />
     </>
   );
 }
